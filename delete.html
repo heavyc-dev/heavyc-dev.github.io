@@ -54,78 +54,55 @@
 
 <main>
   <h1>Data Deletion</h1>
-  <p class="subtitle">How to delete your data from Forge.OS</p>
 
-  <div class="notice">
-    <strong>The simple version:</strong> Forge.OS stores everything on your device. Deleting the App or using the in-app wipe option removes all your data permanently. There is no server-side account to delete because we don't have one.
-  </div>
+  <p>Forge.OS is an offline-first app. <strong>All your data is stored locally on your device.</strong> We do not have servers, accounts, or cloud storage — so there is nothing stored on our end to delete.</p>
+
+  <hr />
 
   <h2>How to Delete Your Data</h2>
 
-  <div class="method">
-    <h3>Option 1: Export First, Then Delete <span class="tag tag-recommended">Recommended</span></h3>
-    <ol>
-      <li>Open Forge.OS and go to <strong>Settings</strong></li>
-      <li>Tap <strong>Export Data</strong> to save a .Forge backup file or QR code — this lets you restore later if you change your mind</li>
-      <li>Once exported, proceed with Option 2 or Option 3 below</li>
-    </ol>
-  </div>
-
-  <div class="method">
-    <h3>Option 2: Wipe Data In-App <span class="tag tag-note">Keeps App Installed</span></h3>
-    <ol>
-      <li>Open Forge.OS and go to <strong>Settings</strong></li>
-      <li>Scroll to the bottom and tap <strong>Wipe All Data</strong></li>
-      <li>Confirm the prompt — this permanently deletes all workouts, exercises, templates, PRs, nutrition logs, and preferences from your device</li>
-    </ol>
-    <p style="margin-top:12px; margin-bottom:0;">This leaves the App installed but resets it to a clean state, as if freshly installed.</p>
-  </div>
-
-  <div class="method">
-    <h3>Option 3: Uninstall the App <span class="tag tag-note">Removes Everything</span></h3>
-    <ul>
-      <li><strong>iOS:</strong> Long-press the Forge.OS icon → Remove App → Delete App</li>
-      <li><strong>Android:</strong> Long-press the Forge.OS icon → Uninstall → OK</li>
-    </ul>
-    <p style="margin-top:12px; margin-bottom:0;">Uninstalling permanently removes the App and all associated data from your device. This action cannot be undone.</p>
-  </div>
-
-  <hr />
-
-  <h2>Subscription Data (RevenueCat)</h2>
-  <p>If you've made in-app purchases, an anonymous purchase record is stored with our payment processor, RevenueCat. This record contains:</p>
+  <h3>Delete All App Data</h3>
+  <p>Uninstall Forge.OS from your device. This permanently removes all locally stored data including workouts, templates, routines, training plans, nutrition logs, achievements, and preferences.</p>
   <ul>
-    <li>An anonymous user ID (not linked to your name or email)</li>
-    <li>Purchase transaction records (what subscription plan, when purchased)</li>
+    <li><strong>iOS:</strong> Long-press the Forge.OS icon &gt; Remove App &gt; Delete App</li>
+    <li><strong>Android:</strong> Settings &gt; Apps &gt; Forge.OS &gt; Uninstall</li>
   </ul>
-  <p>To have this anonymous RevenueCat record deleted, email us at <a href="mailto:dev@heavyc.dev">dev@heavyc.dev</a> with the subject line <strong>"RevenueCat Data Deletion Request"</strong> and we will submit the deletion request to RevenueCat on your behalf.</p>
-  <p>Note: Deleting this record means you will lose the ability to restore any past purchases associated with that anonymous ID.</p>
 
-  <hr />
+  <h3>Delete Data Without Uninstalling</h3>
+  <p>Open the App, go to <strong>Settings &gt; Wipe All Data</strong>. This permanently deletes all workout data, templates, routines, and settings while keeping the App installed.</p>
 
-  <h2>What We DON'T Store</h2>
-  <p>To be explicit about what there is no need to request deletion of:</p>
+  <h3>Export Before Deleting</h3>
+  <p>If you want to keep a copy of your data before deleting, use the App's export features:</p>
   <ul>
-    <li>Your workout logs, personal records, or training history — stored on device only</li>
-    <li>Your nutrition logs — stored on device only</li>
-    <li>Your exercise library, templates, or routines — stored on device only</li>
-    <li>Your name, email address, or any personal identifiers — never collected</li>
-    <li>Your location — never collected</li>
-    <li>Crash logs or analytics — not collected</li>
-    <li>Health data beyond what's stored in your local workout record — not transmitted anywhere</li>
+    <li><strong>Settings &gt; Export All Data</strong> — saves a <code>.forge</code> backup file</li>
+    <li><strong>QR sharing</strong> — export individual templates and routines</li>
   </ul>
 
   <hr />
 
-  <h2>Contact Us</h2>
-  <p>If you have any questions about data deletion, or need assistance with a RevenueCat deletion request:</p>
+  <h2>Subscription Data</h2>
+  <p>If you have an active Forge Pro subscription, deleting the App does not cancel your subscription. Cancel your subscription first:</p>
+  <ul>
+    <li><strong>iOS:</strong> Settings &gt; [Your Name] &gt; Subscriptions &gt; Forge.OS</li>
+    <li><strong>Android:</strong> Google Play Store &gt; Profile &gt; Payments &amp; subscriptions &gt; Subscriptions &gt; Forge.OS</li>
+  </ul>
 
-  <div class="contact-card">
-    <div class="label">Email</div>
-    <div class="value"><a href="mailto:dev@heavyc.dev">dev@heavyc.dev</a></div>
-  </div>
+  <h3>RevenueCat Purchase History</h3>
+  <p>Forge.OS uses RevenueCat for subscription management. RevenueCat stores an anonymous purchase record (not linked to your name or email). If you want this anonymous record deleted, email us at <a href="mailto:dev@heavyc.dev"><strong>dev@heavyc.dev</strong></a> and we will submit a deletion request to RevenueCat on your behalf.</p>
 
-  <p style="margin-top:20px;">We aim to respond within 48 hours and will process any applicable server-side deletion requests within 30 days.</p>
+  <hr />
+
+  <h2>What We Don't Store</h2>
+  <p>Since Forge.OS does not collect or store any personal data on servers, there is no account to delete, no profile to remove, and no cloud data to erase. Your data exists only on your device, under your control.</p>
+  <p>For more details, see our <a href="privacy.html">Privacy Policy</a>.</p>
+
+  <hr />
+
+  <h2>Contact</h2>
+  <p>If you have questions about data deletion:</p>
+  <ul>
+    <li><strong>Email:</strong> <a href="mailto:dev@heavyc.dev">dev@heavyc.dev</a></li>
+  </ul>
 </main>
 
 <footer>

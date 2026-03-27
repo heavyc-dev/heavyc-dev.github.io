@@ -90,7 +90,7 @@
     <li><strong>What:</strong> Camera access for image capture</li>
     <li><strong>Why:</strong> To scan nutrition labels (OCR) and to scan/generate QR codes for sharing templates and routines</li>
     <li><strong>When:</strong> Only activated when you explicitly open the nutrition scanner or QR scanner</li>
-    <li><strong>Processing:</strong> Nutrition label text recognition is performed entirely on-device. No images are uploaded or sent to any server</li>
+    <li><strong>Processing:</strong> Nutrition label text recognition is performed entirely on-device using Apple Vision (iOS) or Google ML Kit (Android). No images are uploaded or sent to any server</li>
     <li>You can deny this permission and use all other features normally</li>
   </ul>
 
@@ -125,37 +125,37 @@
     <li>Device type and OS version</li>
   </ul>
   <p>RevenueCat does not have access to your workout data, nutrition logs, personal records, or any content you create in the App.</p>
-  <p>RevenueCat's privacy policy: <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a></p>
+  <p>RevenueCat's privacy policy: <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">https://www.revenuecat.com/privacy</a></p>
 
   <h3>Apple App Store / Google Play Store</h3>
-  <p>Purchases are processed through Apple or Google's payment systems. We do not see or store your payment information. Apple and Google handle all payment processing under their respective privacy policies.</p>
+  <p>Purchases are processed through Apple or Google's payment systems. We do not see or store your payment information (credit card, billing address, etc.). Apple and Google handle all payment processing under their respective privacy policies.</p>
 
   <h3>Google ML Kit (On-Device)</h3>
-  <p>The nutrition label scanner uses Google ML Kit for text recognition. This processing happens entirely on your device. No images or text are sent to Google's servers.</p>
+  <p>The nutrition label scanner uses Google ML Kit for text recognition. This processing happens entirely on your device. No images or text are sent to Google's servers. Google ML Kit's on-device APIs do not transmit data to Google.</p>
 
   <hr />
 
   <h2>QR Code &amp; File Sharing</h2>
   <p>When you share a template, routine, or training plan via QR code or .Forge file, the data is encoded locally and shared directly with the recipient. No data passes through our servers. You control what is shared and with whom.</p>
-  <p>Share cards (PR cards, analytics snapshots) are generated as images on your device and sent through your device's native share sheet to the destination you choose.</p>
+  <p>Share cards (PR cards, analytics snapshots) are generated as images on your device. When you share them, they are sent through your device's native share sheet to the destination you choose.</p>
 
   <hr />
 
   <h2>Home Screen Widgets (iOS)</h2>
-  <p>Widget data is stored in a shared app group container on your device (<code>group.com.heavyc.forgeos</code>) — a secure, sandboxed storage area that only the App and its widget extension can access. No widget data is sent off your device.</p>
+  <p>The App provides home screen and lock screen widgets that display workout stats, streaks, and upcoming workouts. Widget data is stored in a shared app group container on your device (<code>group.com.heavyc.forgeos</code>) — this is a secure, sandboxed storage area that only the App and its widget extension can access. No widget data is sent off your device.</p>
 
   <hr />
 
   <h2>Children's Privacy</h2>
-  <p>Forge.OS is not directed at children under 13. Since the App does not collect personal data from any user, no special provisions for children's data are necessary.</p>
+  <p>Forge.OS is not directed at children under 13. We do not knowingly collect data from children. Since the App does not collect personal data from any user, no special provisions for children's data are necessary.</p>
 
   <hr />
 
   <h2>Data Export &amp; Deletion</h2>
   <ul>
-    <li><strong>Export:</strong> You can export your data at any time via QR codes or .Forge files. Your data is yours.</li>
-    <li><strong>Deletion:</strong> Deleting the App removes all data from your device. Since we don't store your data on any server, there is nothing for us to delete on our end.</li>
-    <li><strong>Subscription data:</strong> If you need RevenueCat to delete your anonymous purchase history, contact us and we will submit a deletion request on your behalf.</li>
+    <li><strong>Export:</strong> You can export your data at any time via QR codes or .Forge files. Your data is yours</li>
+    <li><strong>Deletion:</strong> Deleting the App removes all data from your device. Since we don't store your data on any server, there is nothing for us to delete on our end</li>
+    <li><strong>Subscription data:</strong> If you need RevenueCat to delete your anonymous purchase history, contact us and we will submit a deletion request on your behalf</li>
   </ul>
 
   <hr />

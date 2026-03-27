@@ -1,0 +1,12 @@
+title: Forge.OS
+description: "Forge your strength."
+url: "https://heavyc.dev"
+baseurl: ""
+
+theme: minima
+
+author:
+  name: Heavy C Development Studio, LLC
+
+plugins:
+  - jekyll-seo-tag
