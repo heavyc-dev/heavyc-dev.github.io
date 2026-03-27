@@ -1,13 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>heavyc-dev docs</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forge.OS — Gym Log &amp; Planner</title>
+  <meta name="description" content="Forge.OS is an offline gym tracker and training planner built for serious lifters." />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0d1117;
+      --surface: #161c25;
+      --border: #1e2937;
+      --orange: #FF7A00;
+      --orange-dim: #cc6200;
+      --text: #e6edf3;
+      --muted: #8b949e;
+      --radius: 4px;
+    }
+    html { scroll-behavior: smooth; }
+    body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.65; font-size: 16px; }
+    a { color: var(--orange); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    nav { background: var(--surface); border-bottom: 1px solid var(--border); padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 56px; position: sticky; top: 0; z-index: 100; }
+    .nav-brand { font-weight: 800; font-size: 1rem; letter-spacing: 0.05em; color: var(--text); }
+    .nav-brand span { color: var(--orange); }
+    .nav-links { display: flex; gap: 24px; font-size: 0.875rem; }
+    .nav-links a { color: var(--muted); }
+    .nav-links a:hover { color: var(--text); text-decoration: none; }
+    .hero { padding: 80px 24px 64px; text-align: center; max-width: 720px; margin: 0 auto; }
+    .hero h1 { font-size: clamp(2rem, 5vw, 3.25rem); font-weight: 900; letter-spacing: -0.02em; line-height: 1.1; margin-bottom: 8px; }
+    .hero h1 span { color: var(--orange); }
+    .hero .tagline { font-size: 1.25rem; color: var(--muted); margin-bottom: 36px; }
+    .badge { display: inline-block; padding: 10px 28px; background: var(--orange); color: #fff; font-weight: 700; font-size: 0.9rem; letter-spacing: 0.05em; border-radius: var(--radius); }
+    hr { border: none; border-top: 1px solid var(--border); margin: 48px 0; }
+    main { max-width: 760px; margin: 0 auto; padding: 0 24px 80px; }
+    h2 { font-size: 1.5rem; font-weight: 800; margin-bottom: 20px; padding-top: 48px; }
+    h2:first-child { padding-top: 0; }
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-bottom: 16px; }
+    .feature { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px 22px; }
+    .feature strong { display: block; color: var(--text); font-weight: 700; margin-bottom: 6px; font-size: 0.95rem; }
+    .feature p { color: var(--muted); font-size: 0.875rem; margin: 0; line-height: 1.55; }
+    .addl { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px 24px; }
+    .addl ul { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 8px 24px; }
+    .addl ul li { color: var(--muted); font-size: 0.875rem; padding-left: 16px; position: relative; }
+    .addl ul li::before { content: "—"; position: absolute; left: 0; color: var(--orange); }
+    .cta-block { text-align: center; padding: 48px 0 0; }
+    .cta-block p { color: var(--muted); margin-bottom: 24px; font-size: 1rem; }
+    .link-list { display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; margin-top: 24px; font-size: 0.875rem; }
+    .link-list a { color: var(--muted); }
+    .link-list a:hover { color: var(--text); }
+    footer { text-align: center; padding: 32px 24px; color: var(--muted); font-size: 0.8rem; border-top: 1px solid var(--border); }
+    @media (max-width: 480px) { .nav-links { gap: 16px; } }
+  </style>
 </head>
 <body>
-  <h1>heavyc-dev docs</h1>
-  <p>Welcome to the heavyc-dev documentation site.</p>
-  <p>Add your documentation files to this repository and link to them here.</p>
+
+<nav>
+  <span class="nav-brand">FORGE<span>.</span>OS</span>
+  <div class="nav-links">
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="support.html">Support</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <h1>Forge<span>.OS</span></h1>
+  <p class="tagline">Forge your strength.</p>
+  <span class="badge">COMING SOON TO APP STORE &amp; GOOGLE PLAY</span>
+</div>
+
+<main>
+  <p style="color:var(--muted); text-align:center; margin-bottom: 48px;">Forge.OS is an offline gym tracker and training planner built for serious lifters. Plan your training blocks, track every set, detect PRs automatically, and analyze your progress — all without an account or internet connection.</p>
+
+  <p style="text-align:center; font-weight:700; color:var(--orange); margin-bottom: 48px; letter-spacing:0.05em;">YOUR DATA STAYS ON YOUR DEVICE.</p>
+
+  <h2>What Makes Forge.OS Different</h2>
+  <div class="features">
+    <div class="feature">
+      <strong>Full Periodization</strong>
+      <p>Not just a workout logger. Create long-term plans and training blocks like a coach. Run preset programs or build custom routines from scratch.</p>
+    </div>
+    <div class="feature">
+      <strong>Data-Driven Analytics</strong>
+      <p>1RM tracking, volume trajectory, load distribution, growth percentages, and custom charts. See exactly where you're getting stronger.</p>
+    </div>
+    <div class="feature">
+      <strong>PR Anthem</strong>
+      <p>Forge.OS captures what song was playing when you hit a personal record. Share your PRs with the soundtrack attached.</p>
+    </div>
+    <div class="feature">
+      <strong>Forge with Friends</strong>
+      <p>Have your friend scan your workout or routine QR code and train together. Or export your full plan as a Forge file for them to import.</p>
+    </div>
+    <div class="feature">
+      <strong>Smart Progression</strong>
+      <p>A 6-layer progression calculator that detects stalls, adjusts for fatigue, learns your per-exercise increment patterns, and suggests your next weight.</p>
+    </div>
+    <div class="feature">
+      <strong>100% Offline</strong>
+      <p>No account. No cloud. No data collection. Everything runs on your device. We don't even have servers.</p>
+    </div>
+    <div class="feature">
+      <strong>One-Time Purchase Available</strong>
+      <p>Tired of $10/month gym apps? Forge.OS offers a lifetime unlock for a single payment. No recurring fees, ever.</p>
+    </div>
+  </div>
+
+  <hr />
+
+  <h2>Additional Features</h2>
+  <div class="addl">
+    <ul>
+      <li>Workout tracking with supersets, dropsets, and exercise variations</li>
+      <li>131 exercises + create your own</li>
+      <li>Customizable routine generator</li>
+      <li>Tons of settings to match the way you train</li>
+      <li>Rest timer with customizable duration</li>
+      <li>140 achievements across Bronze, Silver, and Gold tiers</li>
+      <li>9 forged themes</li>
+      <li>Nutrition tracking with OCR label scanning</li>
+      <li>TDEE and macro calculators</li>
+      <li>Backup your data and save it wherever you want</li>
+      <li>iOS home screen and lock screen widgets</li>
+      <li>Shareable PR cards and analytics snapshots</li>
+      <li>Routine analyzer for muscle balance and frequency</li>
+    </ul>
+  </div>
+
+  <div class="link-list">
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+    <a href="support.html">Support &amp; FAQ</a>
+    <a href="delete.html">Data Deletion</a>
+  </div>
+</main>
+
+<footer>
+  &copy; 2026 Heavy C Development Studio, LLC. All rights reserved.
+</footer>
+
 </body>
 </html>

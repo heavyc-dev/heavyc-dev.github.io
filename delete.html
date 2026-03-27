@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Deletion — Forge.OS</title>
+  <meta name="description" content="How to delete your Forge.OS data from your device." />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --bg: #0d1117; --surface: #161c25; --border: #1e2937; --orange: #FF7A00; --text: #e6edf3; --muted: #8b949e; --radius: 4px; }
+    body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.7; font-size: 16px; }
+    a { color: var(--orange); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    nav { background: var(--surface); border-bottom: 1px solid var(--border); padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 56px; position: sticky; top: 0; z-index: 100; }
+    .nav-brand { font-weight: 800; font-size: 1rem; letter-spacing: 0.05em; color: var(--text); }
+    .nav-brand span { color: var(--orange); }
+    .nav-links { display: flex; gap: 24px; font-size: 0.875rem; }
+    .nav-links a { color: var(--muted); }
+    .nav-links a:hover { color: var(--text); text-decoration: none; }
+    main { max-width: 760px; margin: 0 auto; padding: 48px 24px 80px; }
+    h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); font-weight: 900; letter-spacing: -0.02em; margin-bottom: 8px; }
+    .subtitle { color: var(--muted); font-size: 1.1rem; margin-bottom: 40px; }
+    h2 { font-size: 1.1rem; font-weight: 800; margin-top: 44px; margin-bottom: 14px; color: var(--text); }
+    h3 { font-size: 1rem; font-weight: 700; margin-top: 28px; margin-bottom: 8px; color: var(--orange); }
+    p { color: var(--muted); margin-bottom: 14px; font-size: 0.9375rem; }
+    ul { color: var(--muted); font-size: 0.9375rem; padding-left: 20px; margin-bottom: 14px; }
+    ul li { margin-bottom: 6px; }
+    ol { color: var(--muted); font-size: 0.9375rem; padding-left: 20px; margin-bottom: 14px; }
+    ol li { margin-bottom: 8px; }
+    hr { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
+    .method { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; margin-bottom: 16px; }
+    .method h3 { margin-top: 0; margin-bottom: 12px; }
+    .tag { display: inline-block; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; padding: 2px 8px; border-radius: 100px; margin-left: 10px; vertical-align: middle; }
+    .tag-recommended { background: rgba(255,122,0,0.15); color: var(--orange); border: 1px solid rgba(255,122,0,0.3); }
+    .tag-note { background: rgba(139,148,158,0.15); color: var(--muted); border: 1px solid rgba(139,148,158,0.2); }
+    .notice { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--orange); border-radius: var(--radius); padding: 16px 20px; margin-bottom: 32px; color: var(--muted); font-size: 0.9rem; }
+    .contact-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px 24px; margin-top: 20px; }
+    .contact-card .label { font-size: 0.8rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 4px; }
+    .contact-card .value { font-size: 1rem; font-weight: 700; }
+    .contact-card .value a { color: var(--orange); }
+    footer { text-align: center; padding: 32px 24px; color: var(--muted); font-size: 0.8rem; border-top: 1px solid var(--border); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-brand">FORGE<span>.</span>OS</a>
+  <div class="nav-links">
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="support.html">Support</a>
+  </div>
+</nav>
+
+<main>
+  <h1>Data Deletion</h1>
+  <p class="subtitle">How to delete your data from Forge.OS</p>
+
+  <div class="notice">
+    <strong>The simple version:</strong> Forge.OS stores everything on your device. Deleting the App or using the in-app wipe option removes all your data permanently. There is no server-side account to delete because we don't have one.
+  </div>
+
+  <h2>How to Delete Your Data</h2>
+
+  <div class="method">
+    <h3>Option 1: Export First, Then Delete <span class="tag tag-recommended">Recommended</span></h3>
+    <ol>
+      <li>Open Forge.OS and go to <strong>Settings</strong></li>
+      <li>Tap <strong>Export Data</strong> to save a .Forge backup file or QR code — this lets you restore later if you change your mind</li>
+      <li>Once exported, proceed with Option 2 or Option 3 below</li>
+    </ol>
+  </div>
+
+  <div class="method">
+    <h3>Option 2: Wipe Data In-App <span class="tag tag-note">Keeps App Installed</span></h3>
+    <ol>
+      <li>Open Forge.OS and go to <strong>Settings</strong></li>
+      <li>Scroll to the bottom and tap <strong>Wipe All Data</strong></li>
+      <li>Confirm the prompt — this permanently deletes all workouts, exercises, templates, PRs, nutrition logs, and preferences from your device</li>
+    </ol>
+    <p style="margin-top:12px; margin-bottom:0;">This leaves the App installed but resets it to a clean state, as if freshly installed.</p>
+  </div>
+
+  <div class="method">
+    <h3>Option 3: Uninstall the App <span class="tag tag-note">Removes Everything</span></h3>
+    <ul>
+      <li><strong>iOS:</strong> Long-press the Forge.OS icon → Remove App → Delete App</li>
+      <li><strong>Android:</strong> Long-press the Forge.OS icon → Uninstall → OK</li>
+    </ul>
+    <p style="margin-top:12px; margin-bottom:0;">Uninstalling permanently removes the App and all associated data from your device. This action cannot be undone.</p>
+  </div>
+
+  <hr />
+
+  <h2>Subscription Data (RevenueCat)</h2>
+  <p>If you've made in-app purchases, an anonymous purchase record is stored with our payment processor, RevenueCat. This record contains:</p>
+  <ul>
+    <li>An anonymous user ID (not linked to your name or email)</li>
+    <li>Purchase transaction records (what subscription plan, when purchased)</li>
+  </ul>
+  <p>To have this anonymous RevenueCat record deleted, email us at <a href="mailto:dev@heavyc.dev">dev@heavyc.dev</a> with the subject line <strong>"RevenueCat Data Deletion Request"</strong> and we will submit the deletion request to RevenueCat on your behalf.</p>
+  <p>Note: Deleting this record means you will lose the ability to restore any past purchases associated with that anonymous ID.</p>
+
+  <hr />
+
+  <h2>What We DON'T Store</h2>
+  <p>To be explicit about what there is no need to request deletion of:</p>
+  <ul>
+    <li>Your workout logs, personal records, or training history — stored on device only</li>
+    <li>Your nutrition logs — stored on device only</li>
+    <li>Your exercise library, templates, or routines — stored on device only</li>
+    <li>Your name, email address, or any personal identifiers — never collected</li>
+    <li>Your location — never collected</li>
+    <li>Crash logs or analytics — not collected</li>
+    <li>Health data beyond what's stored in your local workout record — not transmitted anywhere</li>
+  </ul>
+
+  <hr />
+
+  <h2>Contact Us</h2>
+  <p>If you have any questions about data deletion, or need assistance with a RevenueCat deletion request:</p>
+
+  <div class="contact-card">
+    <div class="label">Email</div>
+    <div class="value"><a href="mailto:dev@heavyc.dev">dev@heavyc.dev</a></div>
+  </div>
+
+  <p style="margin-top:20px;">We aim to respond within 48 hours and will process any applicable server-side deletion requests within 30 days.</p>
+</main>
+
+<footer>
+  &copy; 2026 Heavy C Development Studio, LLC. All rights reserved. &nbsp;·&nbsp;
+  <a href="privacy.html">Privacy Policy</a> &nbsp;·&nbsp;
+  <a href="terms.html">Terms</a> &nbsp;·&nbsp;
+  <a href="support.html">Support</a>
+</footer>
+
+</body>
+</html>

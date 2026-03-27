@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Forge.OS</title>
+  <meta name="description" content="Forge.OS Privacy Policy — offline-first, no data collection, no servers." />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --bg: #0d1117; --surface: #161c25; --border: #1e2937; --orange: #FF7A00; --text: #e6edf3; --muted: #8b949e; --radius: 4px; }
+    body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.7; font-size: 16px; }
+    a { color: var(--orange); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    nav { background: var(--surface); border-bottom: 1px solid var(--border); padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 56px; position: sticky; top: 0; z-index: 100; }
+    .nav-brand { font-weight: 800; font-size: 1rem; letter-spacing: 0.05em; color: var(--text); }
+    .nav-brand span { color: var(--orange); }
+    .nav-links { display: flex; gap: 24px; font-size: 0.875rem; }
+    .nav-links a { color: var(--muted); }
+    .nav-links a:hover { color: var(--text); text-decoration: none; }
+    main { max-width: 760px; margin: 0 auto; padding: 48px 24px 80px; }
+    h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); font-weight: 900; letter-spacing: -0.02em; margin-bottom: 8px; }
+    .last-updated { color: var(--muted); font-size: 0.875rem; margin-bottom: 32px; }
+    .intro { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--orange); border-radius: var(--radius); padding: 16px 20px; margin-bottom: 40px; color: var(--muted); font-size: 0.9rem; }
+    h2 { font-size: 1.2rem; font-weight: 800; margin-top: 44px; margin-bottom: 14px; color: var(--text); }
+    h3 { font-size: 1rem; font-weight: 700; margin-top: 28px; margin-bottom: 10px; color: var(--orange); }
+    p { color: var(--muted); margin-bottom: 14px; font-size: 0.9375rem; }
+    ul { color: var(--muted); font-size: 0.9375rem; padding-left: 20px; margin-bottom: 14px; }
+    ul li { margin-bottom: 6px; }
+    hr { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
+    footer { text-align: center; padding: 32px 24px; color: var(--muted); font-size: 0.8rem; border-top: 1px solid var(--border); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-brand">FORGE<span>.</span>OS</a>
+  <div class="nav-links">
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="support.html">Support</a>
+  </div>
+</nav>
+
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="last-updated">Last Updated: March 25, 2026</p>
+
+  <div class="intro">
+    <strong>The short version:</strong> Forge.OS is an offline-first app. Your workout data, nutrition logs, and personal records stay on your device. We don't have servers, we don't create accounts, and we don't track you.
+  </div>
+
+  <p>Forge.OS ("the App") is developed by Heavy C Development Studio, LLC ("we", "us", "our"). This privacy policy explains how the App handles your data.</p>
+
+  <hr />
+
+  <h2>Data Storage</h2>
+  <p>All data you enter into Forge.OS — workouts, templates, routines, training plans, exercises, nutrition logs, achievements, and preferences — is stored locally on your device using an on-device database. This data is never uploaded to our servers because we don't operate any servers.</p>
+  <p>If you delete the App, your data is permanently removed from your device.</p>
+
+  <hr />
+
+  <h2>Data We Do NOT Collect</h2>
+  <ul>
+    <li>We do not collect your name, email address, or any personal identifiers</li>
+    <li>We do not require account creation or sign-in</li>
+    <li>We do not track your location</li>
+    <li>We do not use analytics SDKs (no Firebase Analytics, no Amplitude, no Mixpanel)</li>
+    <li>We do not serve advertisements</li>
+    <li>We do not sell, share, or transfer your data to third parties for marketing purposes</li>
+    <li>We do not build user profiles or behavioral models</li>
+  </ul>
+
+  <hr />
+
+  <h2>Device Permissions</h2>
+  <p>The App may request the following device permissions, all of which are optional:</p>
+
+  <h3>Health Data (iOS HealthKit / Android Health Connect)</h3>
+  <ul>
+    <li><strong>What:</strong> Step count data only (read access)</li>
+    <li><strong>Why:</strong> To display steps taken during your workout alongside your lifting stats</li>
+    <li><strong>When:</strong> Only queried during an active workout session, for the duration of that session</li>
+    <li><strong>Storage:</strong> Step counts are saved locally in your workout record</li>
+    <li><strong>Sharing:</strong> Never sent off your device</li>
+    <li>You can deny this permission and the App functions normally without it</li>
+  </ul>
+
+  <h3>Camera</h3>
+  <ul>
+    <li><strong>What:</strong> Camera access for image capture</li>
+    <li><strong>Why:</strong> To scan nutrition labels (OCR) and to scan/generate QR codes for sharing templates and routines</li>
+    <li><strong>When:</strong> Only activated when you explicitly open the nutrition scanner or QR scanner</li>
+    <li><strong>Processing:</strong> Nutrition label text recognition is performed entirely on-device. No images are uploaded or sent to any server</li>
+    <li>You can deny this permission and use all other features normally</li>
+  </ul>
+
+  <h3>Music / Media Library (iOS)</h3>
+  <ul>
+    <li><strong>What:</strong> Read-only access to currently playing track metadata (song title, artist, album name, album artwork)</li>
+    <li><strong>Why:</strong> To record which song was playing when you hit a personal record (PR Anthem feature)</li>
+    <li><strong>When:</strong> Only queried at the moment a new personal record is detected during a workout</li>
+    <li><strong>Storage:</strong> Track metadata is saved locally in your PR record for display and sharing</li>
+    <li><strong>Sharing:</strong> Only shared if you explicitly create and share a PR share card</li>
+    <li>You can deny this permission and PR detection still works — it just won't capture the song</li>
+  </ul>
+
+  <h3>Notifications</h3>
+  <ul>
+    <li><strong>What:</strong> Permission to send local notifications</li>
+    <li><strong>Why:</strong> Workout inactivity reminders, weekly summaries, and workout reminders</li>
+    <li><strong>When:</strong> Scheduled locally on your device</li>
+    <li><strong>Note:</strong> These are local notifications only. We do not use push notification services and cannot send you notifications remotely</li>
+    <li>You can deny this permission and all other features work normally</li>
+  </ul>
+
+  <hr />
+
+  <h2>Third-Party Services</h2>
+
+  <h3>RevenueCat (Subscription Management)</h3>
+  <p>The App uses RevenueCat to manage in-app purchases and subscriptions. When you make a purchase, restore a purchase, or when the App checks your subscription status, RevenueCat processes:</p>
+  <ul>
+    <li>An anonymous user identifier (not linked to your name or email)</li>
+    <li>Purchase transaction data (what you bought, when, transaction ID)</li>
+    <li>Device type and OS version</li>
+  </ul>
+  <p>RevenueCat does not have access to your workout data, nutrition logs, personal records, or any content you create in the App.</p>
+  <p>RevenueCat's privacy policy: <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a></p>
+
+  <h3>Apple App Store / Google Play Store</h3>
+  <p>Purchases are processed through Apple or Google's payment systems. We do not see or store your payment information. Apple and Google handle all payment processing under their respective privacy policies.</p>
+
+  <h3>Google ML Kit (On-Device)</h3>
+  <p>The nutrition label scanner uses Google ML Kit for text recognition. This processing happens entirely on your device. No images or text are sent to Google's servers.</p>
+
+  <hr />
+
+  <h2>QR Code &amp; File Sharing</h2>
+  <p>When you share a template, routine, or training plan via QR code or .Forge file, the data is encoded locally and shared directly with the recipient. No data passes through our servers. You control what is shared and with whom.</p>
+  <p>Share cards (PR cards, analytics snapshots) are generated as images on your device and sent through your device's native share sheet to the destination you choose.</p>
+
+  <hr />
+
+  <h2>Home Screen Widgets (iOS)</h2>
+  <p>Widget data is stored in a shared app group container on your device (<code>group.com.heavyc.forgeos</code>) — a secure, sandboxed storage area that only the App and its widget extension can access. No widget data is sent off your device.</p>
+
+  <hr />
+
+  <h2>Children's Privacy</h2>
+  <p>Forge.OS is not directed at children under 13. Since the App does not collect personal data from any user, no special provisions for children's data are necessary.</p>
+
+  <hr />
+
+  <h2>Data Export &amp; Deletion</h2>
+  <ul>
+    <li><strong>Export:</strong> You can export your data at any time via QR codes or .Forge files. Your data is yours.</li>
+    <li><strong>Deletion:</strong> Deleting the App removes all data from your device. Since we don't store your data on any server, there is nothing for us to delete on our end.</li>
+    <li><strong>Subscription data:</strong> If you need RevenueCat to delete your anonymous purchase history, contact us and we will submit a deletion request on your behalf.</li>
+  </ul>
+
+  <hr />
+
+  <h2>Changes to This Policy</h2>
+  <p>If we update this policy, we will update the "Last Updated" date above. Significant changes will be communicated through an App update or in-app notice.</p>
+
+  <hr />
+
+  <h2>Contact</h2>
+  <p>If you have questions about this privacy policy or the App's data practices:</p>
+  <ul>
+    <li><strong>Email:</strong> <a href="mailto:dev@heavyc.dev">dev@heavyc.dev</a></li>
+  </ul>
+
+  <p style="margin-top:32px; font-style:italic; color:var(--muted); font-size:0.875rem;">Forge.OS is built on the principle that your training data belongs to you — not us, not advertisers, not the cloud. That's not a feature. It's the foundation.</p>
+</main>
+
+<footer>
+  &copy; 2026 Heavy C Development Studio, LLC. All rights reserved. &nbsp;·&nbsp;
+  <a href="terms.html">Terms</a> &nbsp;·&nbsp;
+  <a href="delete.html">Data Deletion</a>
+</footer>
+
+</body>
+</html>
