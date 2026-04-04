@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Heavy C Development Studio, LLC</title>
+  <meta name="description" content="Learn about Heavy C Development Studio, LLC — a one-person indie studio building practical apps for real life." />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0d1117;
+      --surface: #161c25;
+      --border: #1e2937;
+      --orange: #FF7A00;
+      --orange-dim: #cc6200;
+      --text: #e6edf3;
+      --muted: #8b949e;
+      --radius: 4px;
+    }
+    html { scroll-behavior: smooth; }
+    body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.7; font-size: 16px; }
+    a { color: var(--orange); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    nav { background: var(--surface); border-bottom: 1px solid var(--border); padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 56px; position: sticky; top: 0; z-index: 100; }
+    .nav-brand { font-weight: 800; font-size: 1rem; letter-spacing: 0.05em; color: var(--text); text-decoration: none; }
+    .nav-brand span { color: var(--orange); }
+    .nav-links { display: flex; gap: 24px; font-size: 0.875rem; }
+    .nav-links a { color: var(--muted); }
+    .nav-links a:hover { color: var(--text); text-decoration: none; }
+    .nav-links a.active { color: var(--text); }
+
+    /* Page header */
+    .page-header { max-width: 760px; margin: 0 auto; padding: 56px 24px 8px; }
+    .page-header h1 { font-size: clamp(1.75rem, 4vw, 2.75rem); font-weight: 900; letter-spacing: -0.02em; line-height: 1.15; margin-bottom: 10px; }
+    .page-header h1 span { color: var(--orange); }
+    .page-header .subtitle { color: var(--muted); font-size: 1.05rem; }
+
+    main { max-width: 760px; margin: 0 auto; padding: 40px 24px 80px; }
+
+    /* section divider */
+    hr { border: none; border-top: 1px solid var(--border); margin: 44px 0; }
+
+    /* stat / highlight strip */
+    .strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin: 36px 0; }
+    .strip-item { background: var(--surface); border: 1px solid var(--border); border-top: 3px solid var(--orange); border-radius: var(--radius); padding: 20px 22px; }
+    .strip-item .value { font-size: 1.6rem; font-weight: 900; color: var(--text); line-height: 1.1; margin-bottom: 4px; }
+    .strip-item .label { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+
+    /* body copy */
+    .prose p { color: var(--muted); font-size: 0.9375rem; margin-bottom: 18px; }
+    .prose p:last-child { margin-bottom: 0; }
+    .prose strong { color: var(--text); }
+
+    /* section heading */
+    h2 { font-size: 1.15rem; font-weight: 800; letter-spacing: 0.01em; color: var(--text); margin-bottom: 16px; }
+    .section-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--orange); margin-bottom: 10px; }
+
+    /* values cards */
+    .values { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin-top: 4px; }
+    .value-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px 22px; }
+    .value-card strong { display: block; color: var(--text); font-weight: 700; font-size: 0.95rem; margin-bottom: 6px; }
+    .value-card p { color: var(--muted); font-size: 0.875rem; line-height: 1.55; margin: 0; }
+
+    /* contact card */
+    .contact-card { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--orange); border-radius: var(--radius); padding: 22px 26px; display: flex; flex-wrap: wrap; gap: 28px; align-items: center; }
+    .contact-card .field .label { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 4px; }
+    .contact-card .field .value { font-size: 1rem; font-weight: 700; color: var(--text); }
+    .contact-card .field .value a { color: var(--orange); }
+
+    footer { text-align: center; padding: 32px 24px; color: var(--muted); font-size: 0.8rem; border-top: 1px solid var(--border); }
+    @media (max-width: 480px) { .nav-links { gap: 16px; } }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-brand">FORGE<span>.</span>OS</a>
+  <div class="nav-links">
+    <a href="about.html" class="active">About</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="support.html">Support</a>
+  </div>
+</nav>
+
+<div class="page-header">
+  <p class="section-label">The Studio</p>
+  <h1>Heavy C<br/><span>Development Studio</span></h1>
+  <p class="subtitle">One developer. Real problems. Apps built to actually help.</p>
+</div>
+
+<main>
+
+  <div class="strip">
+    <div class="strip-item">
+      <div class="value">1</div>
+      <div class="label">Developer</div>
+    </div>
+    <div class="strip-item">
+      <div class="value">LLC</div>
+      <div class="label">Registered Studio</div>
+    </div>
+    <div class="strip-item">
+      <div class="value">0</div>
+      <div class="label">Unnecessary Bloat</div>
+    </div>
+  </div>
+
+  <hr />
+
+  <div class="section-label">Who We Are</div>
+  <h2>Just a dev scratching his own itch.</h2>
+  <div class="prose">
+    <p>
+      Heavy C Development Studio, LLC is a one-person indie software studio. There's no team of product managers, no committee decisions, no endless sprint cycles — just a single developer who builds apps to solve problems that come up in real life.
+    </p>
+    <p>
+      The idea is simple: if something is frustrating or missing, <strong>build the tool that fixes it</strong>. And if that tool might help someone else too, ship it and share it.
+    </p>
+    <p>
+      Every app that comes out of this studio started as something built for personal use. That means the features are practical, the UX is direct, and there's no filler — just what's actually useful.
+    </p>
+  </div>
+
+  <hr />
+
+  <div class="section-label">What We Believe</div>
+  <h2>How apps should work.</h2>
+  <div class="values">
+    <div class="value-card">
+      <strong>Your data is yours</strong>
+      <p>Apps shouldn't require accounts to do basic things. Your information lives on your device and stays there unless you say otherwise.</p>
+    </div>
+    <div class="value-card">
+      <strong>Offline by default</strong>
+      <p>A good app works whether you have Wi-Fi or not. Internet should be a feature, not a requirement.</p>
+    </div>
+    <div class="value-card">
+      <strong>No bloat</strong>
+      <p>Features that aren't useful don't ship. Simple, focused apps beat overloaded ones every time.</p>
+    </div>
+    <div class="value-card">
+      <strong>Built to last</strong>
+      <p>Apps are designed to be maintained and improved over time — not abandoned after launch.</p>
+    </div>
+  </div>
+
+  <hr />
+
+  <div class="section-label">Get in Touch</div>
+  <h2>Questions, feedback, or just saying hi.</h2>
+  <div class="prose" style="margin-bottom: 24px;">
+    <p>This is a solo operation, so responses are personal and thoughtful. If you have feedback on an app, a bug to report, or just want to reach out — the inbox is open.</p>
+  </div>
+  <div class="contact-card">
+    <div class="field">
+      <div class="label">Email</div>
+      <div class="value"><a href="mailto:dev@heavyc.dev">dev@heavyc.dev</a></div>
+    </div>
+    <div class="field">
+      <div class="label">Response Time</div>
+      <div class="value" style="font-size:0.9rem; color:var(--muted);">Typically within 48 hours</div>
+    </div>
+    <div class="field">
+      <div class="label">Support &amp; FAQ</div>
+      <div class="value"><a href="support.html">Visit the Support page</a></div>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  &copy; 2026 Heavy C Development Studio, LLC. All rights reserved.
+</footer>
+
+</body>
+</html>
